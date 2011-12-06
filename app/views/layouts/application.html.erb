@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>8d</title>
+  <%= stylesheet_link_tag    "blueprint/screen", :media => 'screen' %>
+  <%= stylesheet_link_tag    "blueprint/print", :media => 'print' %>
+<!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+  <%= stylesheet_link_tag    "1140_cssgrid/1140.css" %>
+  <%= stylesheet_link_tag    "1140_cssgrid/ie.css" %>
+  <%= stylesheet_link_tag    "1140_cssgrid/styles.css" %>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "1140_cssgrid/css3-mediaqueries.js" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header>
+    <h1>8d Online Woodshop</h1>
+  </header>
+  <div id="page">
+    <div id="header_buffer">
+    </div>
+
+<%= yield %>
+
+    <div id="footer_buffer">
+    </div>
+  </div>
+  <footer>
+    <p><%= link_to 'About us', about_path %></p>
+  </footer>
+
+</body>
+</html>
