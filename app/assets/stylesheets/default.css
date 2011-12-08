@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  background-color: #E5F0F6;
+  background-color: #E5F0F6 !important;
 }
 
 /* Header and Footer */
@@ -23,14 +23,14 @@ header h1, footer h1 {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
 }
 
 footer {
-  margin-top: -4em;
+  margin-top: -4em !important;
   text-align: right;
   padding-left: .5em;
   padding-right: .5em;
